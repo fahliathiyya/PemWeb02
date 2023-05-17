@@ -1,7 +1,6 @@
 <?php
-
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +24,9 @@ Route::get('/greeting', function () {
 Route::get('/', function () {
     return view ('index');
 });
+
+Route::get('/mobil', [MobilController::class, 'index']);
+Route::get('/mobil/create', [MobilController::class, 'create']); //memanggilform
+Route::post('/mobil/SimpanData', [MobilController::class, 'store']); //menyimpandata
+
+

@@ -1,0 +1,32 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: beige;
+}
+
+.card{
+    border: 1px solid black;
+    max-width: fit-content;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    align-self: center;
+    margin: auto;
+    box-shadow: 0.5rem 0.5rem;
+    background-color: #fff;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+h2{
+    text-align: center;
+}
