@@ -29,6 +29,10 @@ Route::get('/', function () {
 Route::get('/mobil', [MobilController::class, 'index']);
 Route::get('/mobil/create', [MobilController::class, 'create']); //memanggilform
 Route::post('/mobil/SimpanData', [MobilController::class, 'store']); //menyimpandata
+Route::get('/mobil/edit/{id}', [MobilController::class, 'edit']);
+Route::post('/mobil/update/{id}', [MobilController::class, 'update']);
+Route::get('/mobil/delete/{id}', [MobilController::class, 'delete']);
+
 
 
 // Route Folder Merk
