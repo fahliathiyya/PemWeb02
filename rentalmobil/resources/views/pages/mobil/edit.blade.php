@@ -14,7 +14,7 @@
                 <form action="/mobil/update/{{$mobilData->id}}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <label for="">Merk Mobil</label>
+                        <label for="">Nama Mobil</label>
                         <input type="text" class="form-control" name="nama_mobil" value="{{$mobilData->nama_mobil}}" required>
                     </div>
 
